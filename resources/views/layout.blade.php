@@ -2,10 +2,15 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}">
-	<script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
     <title>@yield('title','Larabugs')</title>
 </head>
 <body>
+	<?php $titulo = "{{titulo}}" ?>
+
+	<div id="app">
+		<h1>{{$titulo}}</h1>
+	</div>
+
 	<div id="container">
 		<div id="header">
 			<div class="container">
@@ -105,6 +110,7 @@
 		    </div>
     	</div>
     </div>
+	<!--
     <script type="text/javascript">
 		$(function () {
 		  $('[data-toggle="popover"]').popover({trigger: 'focus'})
@@ -115,7 +121,9 @@
 		$('[data-spy="scroll"]').each(function () {
 		  var $spy = $(this).scrollspy('refresh')
 		})
-    </script>
+    </script> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 </body>
 </html>
 
