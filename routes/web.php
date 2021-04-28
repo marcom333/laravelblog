@@ -87,6 +87,7 @@ Route::post("/push/event", function (Request $request){
 
 Route::get("hook",function (){
 	return "Automatic pull";
+	
 });
 
 
