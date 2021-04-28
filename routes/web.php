@@ -74,7 +74,7 @@ Route::post("/push/event", function (Request $request){
 });
 
 Route::get("hook",function (){
-	return "<img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nextgov.com%2Fit-modernization%2F2020%2F10%2Fmicrosoft-spacex-team-bring-cloud-computing-space%2F169377%2F&psig=AOvVaw2obp4RFufXYEFWgsNWodd6&ust=1619714512323000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiasPywofACFQAAAAAdAAAAABAD' style='width: 100%; height: 100%'>";
+	return "<img src='https://as01.epimg.net/meristation/imagenes/2019/08/20/header_image/947007541566311405.jpg' style='width: 100%; height: 100%'>";
 });
 
 
