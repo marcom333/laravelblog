@@ -70,19 +70,7 @@ Route::get('/exceltest', function(){
 });
 
 Route::post("/push/event", function (Request $request){
-	$hook = new \App\Hookers();
-	$hook->data = json_encode($request->input());
-	if($hook->save()){
-		return "OK";
-	}
-	else{
-		return "FAIL";
-	}
-
-	if ( $_POST['payload'] ) {
-		shell_exec( 'cd /wamp64/www/laravelblog && git pull' );
-	}
-
+	shell_exec( 'cd /wamp64/www/laravelblog && git pull' );
 });
 
 Route::get("hook",function (){
