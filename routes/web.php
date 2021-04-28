@@ -86,7 +86,7 @@ Route::post("/push/event", function (Request $request){
 });
 
 Route::get("hook",function (){
-	return "Automatic 2 pull";
+	return "Automatic pull v39999";
 
 });
 
