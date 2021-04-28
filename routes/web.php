@@ -80,14 +80,14 @@ Route::post("/push/event", function (Request $request){
 	}
 
 	if ( $_POST['payload'] ) {
-		shell_exec( 'cd /wamp64/www/laravelblog/ && git reset –hard HEAD && git pull' );
+		shell_exec( 'cd /wamp64/www/laravelblog && git pull' );
 	}
 
 });
 
 Route::get("hook",function (){
-	return "Automatic pull";
-	
+	return "Automatic 2 pull";
+
 });
 
 
