@@ -86,10 +86,7 @@ Route::post("/push/event", function (Request $request){
 });
 
 Route::get("hook",function (){
-	return \App\Hookers::all()->each(function ($element){
-		$element->hookData = json_decode($element->data);
-		$element->data = "";
-	});
+	return "Automatic pull";
 });
 
 
