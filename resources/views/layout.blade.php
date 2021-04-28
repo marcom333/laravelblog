@@ -5,11 +5,6 @@
     <title>@yield('title','Larabugs')</title>
 </head>
 <body>
-	<?php $titulo = "{{titulo}}" ?>
-
-	<div id="app">
-		<h1>{{$titulo}}</h1>
-	</div>
 
 	<div id="container">
 		<div id="header">
