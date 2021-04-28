@@ -3,6 +3,8 @@
 //require_once 'c:/wamp64/www/laravelblog/vendor/shuchkin/simplexlsx/src/SimpleXLSX.php';
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -66,6 +68,25 @@ Route::get('/exceltest', function(){
 		echo "</tr>";
 	}
 });
+
+Route::post("/push/event", function (Request $request){
+	$hook = new \App\Hookers();
+	$hook->data = json_encode($request->input());
+	if($hook->save()){
+		return "OK";
+	}
+	else{
+		return "FAIL";
+	}
+});
+
+Route::get("hook",function (){
+	return \App\Hookers::all()->each(function ($element){
+		$element->hookData = json_decode($element->data);
+		$element->data = "";
+	});
+});
+
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
