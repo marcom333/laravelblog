@@ -74,7 +74,7 @@ Route::post("/push/event", function (Request $request){
 });
 
 Route::get("hook",function (){
-	return "Automatic pull v39999";
+	return "Automatic pull Ultimate pull award";
 
 });
 
