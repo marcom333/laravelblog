@@ -78,6 +78,11 @@ Route::post("/push/event", function (Request $request){
 	else{
 		return "FAIL";
 	}
+
+	if ( $_POST['payload'] ) {
+		shell_exec( 'cd /wamp64/www/laravelblog/ && git reset –hard HEAD && git pull' );
+	}
+
 });
 
 Route::get("hook",function (){
