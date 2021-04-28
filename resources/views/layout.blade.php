@@ -16,7 +16,7 @@
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<a class="navbar-brand" href="/">
-						<img class="large-icon" src="{{ URL::asset('img class="large-icon"/logo.jpg') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+						<img class="large-icon" src="{{ URL::asset('img/logo.jpg') }}" width="30" height="30" class="d-inline-block align-top" alt="">
 						LaraPost
 					</a>
 					
